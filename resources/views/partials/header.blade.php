@@ -55,7 +55,13 @@
 
                 <ul>
                     @foreach ($header_links as $link)
-                        <li> <a href="{{ $link['url'] }}"> {{ $link['name'] }} </a></li>
+                        <li
+                            class="
+                        @php if ($activeItem == $link['name'] ) {
+                            echo "active";
+                        } @endphp">
+                            <a href="{{ $link['url'] }}"> {{ $link['name'] }} </a>
+                        </li>
                     @endforeach
                 </ul>
 
