@@ -1,0 +1,22 @@
+@use "./variable" as *;
+
+.ms_content {
+    position: relative;
+    background-color: $content_bg_color;
+    color: white;
+    z-index: 999;
+    padding: 2rem 0 2rem 0 !important;
+
+    .ms_label {
+        background-color: $primary_blue;
+        position: absolute;
+        font-size: .8rem;
+        padding: .5rem 1rem !important;
+        top: -15px;
+        left: 100px;
+    }
+
+    .ms_container {
+        padding-top: .4rem;
+    }
+}

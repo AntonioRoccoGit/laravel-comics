@@ -1,12 +1,13 @@
 @use "./partials/variable" as *;
 @use "./partials/header";
 @use "./partials/footer";
+@use "./partials/content";
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -26,4 +27,17 @@ header {
     width: 80%;
     margin: 0 auto !important;
     max-width: 1200px;
+}
+
+.jumbotron {
+    height: 30vh;
+
+    img {
+        height: 600px;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+        position: relative;
+    }
 }
