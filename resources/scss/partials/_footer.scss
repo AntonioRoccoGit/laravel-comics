@@ -1,9 +1,11 @@
 @use "./variable" as *;
 
 .footer-top {
+    height: $footer_top_height;
     background-image: url("../img/footer-bg.jpg");
     background-size: auto;
     position: relative;
+    z-index: -1;
 
     &-link {
         width: 450px;
