@@ -1,0 +1,98 @@
+@use "./variable" as *;
+
+.footer-top {
+    background-image: url("../img/footer-bg.jpg");
+    background-size: auto;
+    position: relative;
+
+    &-link {
+        width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .ms_card {
+            width: calc(100% / 3);
+
+            h2 {
+                text-transform: uppercase;
+                color: white;
+                font-size: .6rem;
+                margin-top: 1rem;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-top: .4rem;
+
+                a {
+                    color: rgba(255, 255, 255, 0.288);
+                    text-decoration: none;
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+
+    &-logo {
+        left: 50%;
+        top: -50px;
+        position: absolute;
+        height: 450px;
+        width: 450px;
+        z-index: 0;
+    }
+
+    .container {
+        display: flex;
+
+    }
+
+}
+
+.footer-bottom {
+    position: relative;
+    background-color: $dark_bg_color;
+    z-index: 10;
+    height: $footer_bottom_height;
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            color: white;
+            background-color: inherit;
+            border: none;
+            padding: .8rem .6rem;
+            border: 1px solid $primary_blue;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                &:first-child {
+                    font-size: .7rem;
+                    font-weight: 600;
+                }
+
+                line-height: $footer_bottom_height;
+                margin-right: 1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $primary_blue;
+
+                img {
+                    vertical-align: middle;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
