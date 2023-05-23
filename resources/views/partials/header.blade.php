@@ -1,25 +1,44 @@
 @php
     $header_links = [
-        'characters' => [
+        [
+            'name' => 'characters',
             'url' => '/characters',
         ],
-        'comics' => [
-            'url' => '/comics',
+        [
+            'name' => 'comics',
+            'url' => '/',
         ],
-        'movies' => [
+        [
+            'name' => 'movies',
             'url' => '/movies',
         ],
-        'tv' => [
+        [
+            'name' => 'tv',
             'url' => '/tv',
         ],
-        'characters' => [
-            'url' => '/characters',
-        ],
-        'games' => [
+        [
+            'name' => 'games',
             'url' => '/games',
         ],
-        'collectibles' => [
+        [
+            'name' => 'collectibles',
             'url' => '/collectibles',
+        ],
+        [
+            'name' => 'videos',
+            'url' => '/videos',
+        ],
+        [
+            'name' => 'fans',
+            'url' => '/fans',
+        ],
+        [
+            'name' => 'news',
+            'url' => '/news',
+        ],
+        [
+            'name' => 'shop',
+            'url' => '/shop',
         ],
     ];
 @endphp
@@ -29,14 +48,14 @@
         <section class="header">
             <div class="logo">
                 <a href="#">
-                    <img src="../assets/img/dc-logo.png" alt="">
+                    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
                 </a>
             </div>
             <div class="link">
 
                 <ul>
-                    @foreach ($header_links as $key => $link)
-                        <li> <a href=""> {{ $key }} </a></li>
+                    @foreach ($header_links as $link)
+                        <li> <a href="{{ $link['url'] }}"> {{ $link['name'] }} </a></li>
                     @endforeach
                 </ul>
 
