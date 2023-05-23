@@ -114,10 +114,10 @@
 <footer>
     <!-- footer top -->
     <section class="footer-top">
-        <div class="container">
+        <div class="ms_container">
             <div class="footer-top-link">
                 @foreach ($footer_link as $heading => $value)
-                    <div class="ms_card">
+                    <div class="ms_card py-4 ps-2">
                         <h2> {{ $heading }} </h2>
                         <ul>
                             @foreach ($footer_link[$heading] as $index => $item)
@@ -136,7 +136,7 @@
 
     <!-- footer bottom -->
     <section class="footer-bottom">
-        <div class="container">
+        <div class="ms_container">
             <button>SIGN-UP NOW!</button>
             <ul>
                 <li><a href="">FOLLOW US</a></li>

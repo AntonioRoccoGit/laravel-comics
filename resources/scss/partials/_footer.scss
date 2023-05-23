@@ -44,7 +44,7 @@
         z-index: 0;
     }
 
-    .container {
+    .ms_container {
         display: flex;
 
     }
@@ -57,7 +57,7 @@
     z-index: 10;
     height: $footer_bottom_height;
 
-    .container {
+    .ms_container {
         height: 100%;
         display: flex;
         justify-content: space-between;

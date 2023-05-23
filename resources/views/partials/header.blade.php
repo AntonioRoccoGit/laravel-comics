@@ -44,7 +44,7 @@
 @endphp
 
 <header>
-    <div class="container">
+    <div class="ms_container">
         <section class="header">
             <div class="logo">
                 <a href="#">
