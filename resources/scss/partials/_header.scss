@@ -1,0 +1,42 @@
+@use "./variable" as *;
+
+.header {
+    height: $header_height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .logo img {
+        height: 60px;
+    }
+
+    .link {
+
+        a {
+            display: block;
+            height: $header_height;
+            text-decoration: none;
+            color: inherit;
+            text-transform: uppercase;
+        }
+
+        li {
+            text-align: center;
+            display: inline-block;
+            min-width: 30px;
+            margin-right: 1rem;
+            height: $header_height;
+            line-height: $header_height;
+            font-size: .6rem;
+            font-weight: 900;
+
+            &.active,
+            &:hover {
+                color: $primary_blue;
+                border-bottom: 6px solid $primary_blue;
+            }
+        }
+    }
+
+}

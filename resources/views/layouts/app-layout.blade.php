@@ -14,9 +14,7 @@
 </head>
 
 <body>
-    <header>
-        @include('partials.header')
-    </header>
+    @include('partials.header')
 
     <main class="bg-light">
         @yield('content')
